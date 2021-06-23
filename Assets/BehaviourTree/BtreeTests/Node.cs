@@ -2,6 +2,7 @@
 
 public abstract class Node
 {
+    protected int currentChild = 0;
     protected List<Node> children = new List<Node>();
     public string name;
 
@@ -15,6 +16,15 @@ public abstract class Node
     public void AddChild(Node child)
     {
         children.Add(child);
+    }
+    
+    public Node GetCurrentChild()
+    {
+        if (children.Count == 0)
+        {
+            return this;
+        }
+        return children[currentChild].GetCurrentChild();
     }
 
     protected string PrintName(int level)

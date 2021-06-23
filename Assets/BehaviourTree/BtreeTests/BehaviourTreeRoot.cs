@@ -1,6 +1,6 @@
 ﻿public class BehaviourTreeRoot : Node
 {
-    private int currentChild = 0;
+    
 
     public override Status Process()
     {
@@ -17,6 +17,8 @@
         return Status.Running;
     }
 
+    
+
     public string TreeString()
     {
         return PrintName(0);
@@ -32,5 +34,6 @@
 public enum Status
 {
     Success,
-    Running
+    Running,
+    Failure
 }

@@ -1,14 +1,26 @@
 ﻿using NUnit.Framework;
-using UnityEngine;
 
-public class TestProcess
+public class TreeTest
 {
-    private BehaviourTreeRoot tree;
+    protected BehaviourTreeRoot tree;
+    protected OneShotNode oneshot;
+
 
     [SetUp]
+    public void CreateAll()
+    {
+        CreateTree();
+        CreateOneShotNode();
+    }
+
     public void CreateTree()
     {
         tree = new BehaviourTreeRoot("root");
+    }
+
+    public void CreateOneShotNode()
+    {
+        oneshot = new OneShotNode("1");
     }
 
     [TearDown]
@@ -16,11 +28,16 @@ public class TestProcess
     {
         tree = null;
     }
+}
+
+
+public class TestProcess : TreeTest
+{
+
 
     [Test]
     public void OneShotTest()
     {
-        OneShotNode oneshot = new OneShotNode("1");
         tree.AddChild(oneshot);
         tree.Process();
         Assert.IsTrue(oneshot.done);
@@ -30,14 +47,13 @@ public class TestProcess
     [Test]
     public void TwoOneShots()
     {
-        OneShotNode one = new OneShotNode("1");
         OneShotNode two = new OneShotNode("2");
 
-        tree.AddChild(one);
+        tree.AddChild(oneshot);
         tree.AddChild(two);
-        Assert.IsFalse(one.done);
+        Assert.IsFalse(oneshot.done);
         Assert.AreEqual(Status.Running, tree.Process());
-        Assert.IsTrue(one.done);
+        Assert.IsTrue(oneshot.done);
         Assert.IsFalse(two.done);
         Assert.AreEqual(Status.Success, tree.Process());
         Assert.IsTrue(two.done);
@@ -46,7 +62,7 @@ public class TestProcess
     [Test]
     public void TestRunningTree()
     {
-        RunningTree run = new RunningTree("runningTree");
+        ThreeRunningNode run = new ThreeRunningNode("runningTree");
         tree.AddChild(run);
 
         Assert.AreEqual(Status.Running, tree.Process());
@@ -63,7 +79,8 @@ public class TestProcess
     [Test]
     public void DefaultName()
     {
-        Assert.AreEqual("root",tree.name);
+        tree = new BehaviourTreeRoot("root");
+        Assert.AreEqual("root", tree.name);
     }
 
     [Test]
@@ -71,74 +88,69 @@ public class TestProcess
     {
         Assert.AreEqual("root\n", tree.TreeString());
     }
-    
+
     [Test]
     public void PrintTreeWith1Child()
     {
         tree.AddChild(new OneShotNode("first"));
-        Debug.Log(tree.TreeString());
         Assert.AreEqual("root\n-first\n", tree.TreeString());
     }
-     [Test]
+
+    [Test]
     public void PrintTreeWith2Child()
     {
         tree.AddChild(new OneShotNode("first"));
         tree.AddChild(new OneShotNode("second"));
-        Debug.Log(tree.TreeString());
         Assert.AreEqual("root\n-first\n-second\n", tree.TreeString());
     }
-    
-      [Test]
+
+    [Test]
     public void PrintTree2Deep()
     {
         Node child = new OneShotNode("child");
         Node grandchild = new OneShotNode("grandchild");
         child.AddChild(grandchild);
         tree.AddChild(child);
-        Debug.Log(tree.TreeString());
         Assert.AreEqual("root\n-child\n--grandchild\n", tree.TreeString());
     }
-    
-    
+}
 
-    private class RunningTree : Node
+public class OneShotNode : Node
+{
+    public bool done;
+    public Status status;
+
+    public OneShotNode(string name) : base(name)
     {
-        public bool isComplete;
-        public int counter = 0;
-
-
-        public override Status Process()
-        {
-            if (counter < 3)
-            {
-                counter++;
-                return Status.Running;
-            }
-
-            isComplete = true;
-            return Status.Success;
-        }
-
-        public RunningTree(string name) : base(name)
-        {
-        }
     }
 
 
-    private class OneShotNode : Node
+    public override Status Process()
     {
-        public bool done;
-        public Status status;
+        done = true;
+        return Status.Success;
+    }
+}
 
-        public OneShotNode(string name) : base(name)
+public class ThreeRunningNode : Node
+{
+    public bool isComplete;
+    public int counter = 0;
+
+
+    public override Status Process()
+    {
+        if (counter < 3)
         {
+            counter++;
+            return Status.Running;
         }
 
+        isComplete = true;
+        return Status.Success;
+    }
 
-        public override Status Process()
-        {
-            done = true;
-            return Status.Success;
-        }
+    public ThreeRunningNode(string name) : base(name)
+    {
     }
 }
