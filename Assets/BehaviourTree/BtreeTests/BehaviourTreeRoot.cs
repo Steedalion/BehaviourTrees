@@ -1,4 +1,4 @@
-﻿public class BehaviourTree : Node
+﻿public class BehaviourTreeRoot : Node
 {
     private int currentChild = 0;
 
@@ -24,7 +24,7 @@
 
     
 
-    public BehaviourTree(string name) : base(name)
+    public BehaviourTreeRoot(string name) : base(name)
     {
     }
 }

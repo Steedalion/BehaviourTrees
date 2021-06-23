@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class TestProcess
 {
-    private BehaviourTree tree;
+    private BehaviourTreeRoot tree;
 
     [SetUp]
     public void CreateTree()
     {
-        tree = new BehaviourTree("root");
+        tree = new BehaviourTreeRoot("root");
     }
 
     [TearDown]
@@ -20,7 +20,7 @@ public class TestProcess
     [Test]
     public void OneShotTest()
     {
-        OneShotNode oneshot = new OneShotNode();
+        OneShotNode oneshot = new OneShotNode("1");
         tree.AddChild(oneshot);
         tree.Process();
         Assert.IsTrue(oneshot.done);
@@ -30,8 +30,8 @@ public class TestProcess
     [Test]
     public void TwoOneShots()
     {
-        OneShotNode one = new OneShotNode();
-        OneShotNode two = new OneShotNode();
+        OneShotNode one = new OneShotNode("1");
+        OneShotNode two = new OneShotNode("2");
 
         tree.AddChild(one);
         tree.AddChild(two);
@@ -46,7 +46,7 @@ public class TestProcess
     [Test]
     public void TestRunningTree()
     {
-        RunningTree run = new RunningTree();
+        RunningTree run = new RunningTree("runningTree");
         tree.AddChild(run);
 
         Assert.AreEqual(Status.Running, tree.Process());
@@ -118,6 +118,10 @@ public class TestProcess
             isComplete = true;
             return Status.Success;
         }
+
+        public RunningTree(string name) : base(name)
+        {
+        }
     }
 
 
@@ -130,9 +134,6 @@ public class TestProcess
         {
         }
 
-        public OneShotNode()
-        {
-        }
 
         public override Status Process()
         {

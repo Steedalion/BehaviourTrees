@@ -5,11 +5,6 @@ public abstract class Node
     protected List<Node> children = new List<Node>();
     public string name;
 
-    protected Node()
-    {
-        name = GetType().ToString();
-    }
-
     protected Node(string name)
     {
         this.name = name;
