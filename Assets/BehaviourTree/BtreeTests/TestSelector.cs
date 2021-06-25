@@ -6,7 +6,7 @@ namespace BehaviourTree.BtreeTests
     {
         private Node selector;
 
-        [Test]
+        [SetUp]
         public void CreateSelector()
         {
             selector = new Selector("Seltester");
@@ -47,18 +47,6 @@ namespace BehaviourTree.BtreeTests
 
             Assert.AreEqual(Status.Running, selector.Process());
             Assert.AreEqual(Status.Success, selector.Process());
-        }
-    }
-
-    internal class Selector : Node
-    {
-        public Selector(string name) : base(name)
-        {
-        }
-
-        public override Status Process()
-        {
-            throw new System.NotImplementedException();
         }
     }
 }
