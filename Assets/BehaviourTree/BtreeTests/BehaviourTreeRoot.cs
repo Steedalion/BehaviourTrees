@@ -1,39 +1,43 @@
-﻿public class BehaviourTreeRoot : Node
+﻿namespace BehaviourTree.BtreeTests
 {
+    public class BehaviourTreeRoot : Node
+    {
     
 
-    public override Status Process()
-    {
-        if (children[currentChild].Process() == Status.Success)
+        public override Status Process()
         {
-            currentChild++;
+            if (currentChild >= children.Count)
+            {
+                return Status.Success;
+            }
+
+            if (children[currentChild].Process() == Status.Success)
+            {
+                currentChild++;
+            }
+
+
+            return Status.Running;
         }
 
-        if (currentChild >= children.Count)
+    
+
+        public string TreeString()
         {
-            return Status.Success;
+            return PrintName(0);
         }
 
-        return Status.Running;
-    }
-
     
 
-    public string TreeString()
-    {
-        return PrintName(0);
+        public BehaviourTreeRoot(string name) : base(name)
+        {
+        }
     }
 
-    
-
-    public BehaviourTreeRoot(string name) : base(name)
+    public enum Status
     {
+        Success,
+        Running,
+        Failure
     }
-}
-
-public enum Status
-{
-    Success,
-    Running,
-    Failure
 }

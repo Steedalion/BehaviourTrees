@@ -1,36 +1,37 @@
-﻿using System.Diagnostics;
-using BehaviourTree.BtreeTests;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-public class TreeTest
+namespace BehaviourTree.BtreeTests
 {
-    protected BehaviourTreeRoot tree;
-    protected OneShotNode oneshot;
+    public class TreeTest
+    {
+        protected BehaviourTreeRoot tree;
+        protected OneShotNode oneshot;
     
-   protected Node failingOneShot = new ActionNode("Failure", () => Status.Failure);
+        protected Node failingOneShot = new ActionNode("Failure", () => Status.Failure);
 
 
-    [SetUp]
-    public void CreateAll()
-    {
-        CreateTree();
-        CreateOneShotNode();
-    }
+        [SetUp]
+        public void CreateAll()
+        {
+            CreateTree();
+            CreateOneShotNode();
+        }
 
-    public void CreateTree()
-    {
-        tree = new BehaviourTreeRoot("root");
-    }
+        public void CreateTree()
+        {
+            tree = new BehaviourTreeRoot("root");
+        }
 
-    public void CreateOneShotNode()
-    {
-        oneshot = new OneShotNode("1");
-    }
+        public void CreateOneShotNode()
+        {
+            oneshot = new OneShotNode("1");
+        }
 
-    [TearDown]
-    public void DestroyTree()
-    {
-        tree = null;
-    }
+        [TearDown]
+        public void DestroyTree()
+        {
+            tree = null;
+        }
     
+    }
 }

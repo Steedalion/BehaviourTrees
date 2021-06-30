@@ -1,0 +1,15 @@
+{
+    "name": "Robber",
+    "references": [
+        "GUID:2db8db1cdb70432478bae848170efccf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

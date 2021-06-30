@@ -33,20 +33,4 @@ namespace BehaviourTree.BtreeTests
         }
 
     }
-
-    public class Condition : Node
-    {
-        public delegate bool myCondition();
-
-        private myCondition eval;
-        public Condition(string name, myCondition myCondition) : base(name)
-        {
-            eval = myCondition;
-        }
-
-        public override Status Process()
-        {
-            throw new System.NotImplementedException();
-        }
-    }
 }

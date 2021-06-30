@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -97,8 +97,9 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 62cc8b6c8a10c4e33a91de7c0e677372, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 62cc8b6c8a10c4e33a91de7c0e677372,
+    type: 2}
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,8 +119,6 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-    maxJobWorkers: 0
-    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 4398f1fedb8fb45699748aacbb84d6d2, type: 2}
@@ -184,7 +183,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -209,7 +207,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &3044441
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -279,7 +276,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -304,7 +300,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &13598987
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -374,7 +369,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -399,7 +393,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &53561957
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -469,7 +462,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -494,7 +486,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &97196389
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -564,7 +555,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -589,7 +579,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &133567716
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -659,7 +648,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -684,7 +672,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &250082967
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -754,7 +741,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -779,7 +765,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &277728425
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -849,7 +834,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -874,7 +858,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &311345816
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -944,7 +927,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -969,7 +951,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &325310927
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1039,7 +1020,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1064,7 +1044,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &369713589
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1134,7 +1113,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1159,7 +1137,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &381845546
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1175,72 +1152,94 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2063104221}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalScale.x
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalScale.y
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalScale.z
       value: 80
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.791
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9659259
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.25881907
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: -7511558181221131132, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: fd2a220c8588d489ab78f9090d4408ed, type: 2}
-    - target: {fileID: 919132149155446097, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+    - target: {fileID: 919132149155446097, guid: a5028766c6c2448878d200bb33de1f59,
+        type: 3}
       propertyPath: m_Name
       value: H3DDiamond
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+--- !u!1 &390087452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a5028766c6c2448878d200bb33de1f59,
+    type: 3}
+  m_PrefabInstance: {fileID: 390087451}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &398602168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,7 +1301,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1327,7 +1325,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &398602172
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1397,7 +1394,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1422,7 +1418,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &415012744
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1479,7 +1474,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1504,7 +1498,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &425408387
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1607,8 +1600,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524558653}
-  m_LocalRotation: {x: -0.22950613, y: 0.34205493, z: -0.08654347, w: -0.9071029}
-  m_LocalPosition: {x: 22.542892, y: 19.594994, z: -4.3823223}
+  m_LocalRotation: {x: -0.1876897, y: 0.7250363, z: -0.2173947, w: -0.6259668}
+  m_LocalPosition: {x: 51.860565, y: 34.28621, z: 21.408043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1675,7 +1668,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1700,7 +1692,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &554263522
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1770,7 +1761,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1795,7 +1785,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &610103881
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1811,68 +1800,89 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalScale.x
       value: 2.173099
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalScale.y
       value: 2.173099
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalScale.z
       value: 2.173099
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.857273
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.36
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: -11.09
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+    - target: {fileID: 919132149155446097, guid: 647a124cd5c1147a793fcacc25f6be1a,
+        type: 3}
       propertyPath: m_Name
       value: GetawayVan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 647a124cd5c1147a793fcacc25f6be1a, type: 3}
+--- !u!1 &631430679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 647a124cd5c1147a793fcacc25f6be1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 631430678}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &642336159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1880,51 +1890,63 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.08
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.425001
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalPosition.z
       value: -7.08
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.36131835
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.9324426
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 137.638
       objectReference: {fileID: 0}
-    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7423567203501390115, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7438494788967298231, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+    - target: {fileID: 7438494788967298231, guid: b79d0b13355dc8f44b7956db61a82656,
+        type: 3}
       propertyPath: m_Name
       value: Robber
       objectReference: {fileID: 0}
@@ -1932,9 +1954,24 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
 --- !u!1 &642336160 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7438494788967298231, guid: b79d0b13355dc8f44b7956db61a82656, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7438494788967298231, guid: b79d0b13355dc8f44b7956db61a82656,
+    type: 3}
   m_PrefabInstance: {fileID: 642336159}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &642336161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642336160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3529d88fcb5c443804622e3dd15550, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diamond: {fileID: 390087452}
+  truck: {fileID: 631430679}
 --- !u!195 &642336162
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2018,7 +2055,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2043,7 +2079,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &716268928
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2113,7 +2148,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2138,7 +2172,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &731638317
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2208,7 +2241,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2233,7 +2265,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &753548937
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2303,7 +2334,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2328,7 +2358,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &764073190
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2398,7 +2427,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2423,7 +2451,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &904382815
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2480,7 +2507,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2505,7 +2531,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &915494411
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2580,7 +2605,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2605,7 +2629,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &919599689
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2692,7 +2715,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2717,7 +2739,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &925317493
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2805,7 +2826,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2830,7 +2850,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &949050343
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2900,7 +2919,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2925,7 +2943,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &963338011
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2995,7 +3012,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3020,7 +3036,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &966251700
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3090,7 +3105,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3115,7 +3129,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1020514928
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3200,7 +3213,6 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1026001947
@@ -3278,7 +3290,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3303,7 +3314,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1044379985
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3373,7 +3383,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3398,7 +3407,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1088711499
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3455,7 +3463,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3480,7 +3487,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1101234488
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3568,7 +3574,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3593,7 +3598,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1110814438
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3663,7 +3667,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3688,7 +3691,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1125367890
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3758,7 +3760,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3783,7 +3784,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1172151400
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3853,7 +3853,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3878,7 +3877,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1235673731
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3948,7 +3946,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3973,7 +3970,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1254604864
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4043,7 +4039,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4068,7 +4063,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1256560715
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4138,7 +4132,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4163,7 +4156,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1285749805
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4233,7 +4225,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4258,7 +4249,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1355377658
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4328,7 +4318,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4353,7 +4342,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1442085869
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4423,7 +4411,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4448,7 +4435,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1476817122
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4518,7 +4504,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4543,7 +4528,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1539523234
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4600,7 +4584,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4625,7 +4608,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1544815188
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4699,7 +4681,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4724,7 +4705,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1550492366
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4809,7 +4789,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4834,7 +4813,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1575733675
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4904,7 +4882,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4929,7 +4906,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1589796587
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4986,7 +4962,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5011,7 +4986,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1697981440
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5108,7 +5082,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5133,7 +5106,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1739719923
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5190,7 +5162,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5215,7 +5186,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1791870524
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5256,7 +5226,8 @@ NavMeshObstacle:
   m_TimeToStationary: 0.5
 --- !u!4 &1796479289 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59, type: 3}
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a5028766c6c2448878d200bb33de1f59,
+    type: 3}
   m_PrefabInstance: {fileID: 390087451}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1904932022
@@ -5307,7 +5278,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5332,7 +5302,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1904932025
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5407,7 +5376,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5432,7 +5400,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1922895636
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5520,7 +5487,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5545,7 +5511,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1934002883
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5602,7 +5567,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5627,7 +5591,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1959054993
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5715,7 +5678,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5740,7 +5702,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1992935638
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5810,7 +5771,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5835,7 +5795,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &2036650180
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5949,7 +5908,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5974,7 +5932,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &2090121843
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6044,7 +6001,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6069,7 +6025,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &2130457089
 MeshFilter:
   m_ObjectHideFlags: 0
