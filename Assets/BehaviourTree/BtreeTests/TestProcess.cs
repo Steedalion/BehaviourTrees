@@ -13,6 +13,14 @@ namespace BehaviourTree.BtreeTests
         }
 
         [Test]
+        public void RootFailure()
+        {
+            tree.AddChild(failingOneShot);
+            tree.Process();
+            Assert.AreEqual(Status.Failure,tree.Process());
+        }
+
+        [Test]
         public void OneShotTest()
         {
             tree.AddChild(oneshot);

@@ -14,6 +14,7 @@
             if (children[currentChild].Process() == Status.Success)
             {
                 currentChild++;
+                return Status.Running;
             }
 
 

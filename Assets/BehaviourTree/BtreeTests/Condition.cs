@@ -5,9 +5,9 @@
         public delegate bool myCondition();
 
         private myCondition eval;
-        public Condition(string name, myCondition myCondition) : base(name)
+        public Condition(string name, myCondition condition) : base(name)
         {
-            eval = myCondition;
+            eval = condition;
         }
 
         public override Status Process()

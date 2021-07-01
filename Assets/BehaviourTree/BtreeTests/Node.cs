@@ -8,6 +8,8 @@ namespace BehaviourTree.BtreeTests
         protected List<Node> children = new List<Node>();
         public string name;
 
+     
+
         protected Node(string name)
         {
             this.name = name;
