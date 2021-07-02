@@ -40,6 +40,9 @@ namespace BehaviourTree.BtreeTests
             sequence.AddChild(failingOneShot);
             sequence.AddChild(oneshot);
             Assert.AreEqual(Status.Failure, sequence.Process());
+            sequence.Process();
+            sequence.Process();
+            Assert.IsFalse(oneshot.done);
         }
     }
 }

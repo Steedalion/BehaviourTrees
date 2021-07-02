@@ -7,8 +7,8 @@ namespace BehaviourTree.BtreeTests
         protected int currentChild = 0;
         protected List<Node> children = new List<Node>();
         public string name;
+        public bool lastChild => (currentChild == children.Count - 1);
 
-     
 
         protected Node(string name)
         {
@@ -21,13 +21,14 @@ namespace BehaviourTree.BtreeTests
         {
             children.Add(child);
         }
-    
+
         public Node GetCurrentChild()
         {
             if (children.Count == 0)
             {
                 return this;
             }
+
             return children[currentChild].GetCurrentChild();
         }
 
@@ -36,8 +37,8 @@ namespace BehaviourTree.BtreeTests
             string output = CreateIndent(level);
 
             output += name + "\n";
-        
-            children.ForEach( child => output+= child.PrintName(level+1));
+
+            children.ForEach(child => output += child.PrintName(level + 1));
             return output;
         }
 
@@ -48,6 +49,7 @@ namespace BehaviourTree.BtreeTests
             {
                 output += "-";
             }
+
             return output;
         }
     }

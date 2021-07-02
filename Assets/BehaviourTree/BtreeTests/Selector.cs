@@ -9,6 +9,7 @@
         public override Status Process()
         {
             Status currentChildStatus = children[currentChild].Process();
+
             if (currentChildStatus == Status.Running)
             {
                 return Status.Running;
@@ -21,14 +22,17 @@
 
             if (currentChildStatus == Status.Failure)
             {
-                currentChild++;
-                if (currentChild >= children.Count)
+                if (lastChild) 
                 {
                     return Status.Failure;
                 }
+
+                currentChild++;
             }
 
             return Status.Running;
         }
+
+      
     }
 }

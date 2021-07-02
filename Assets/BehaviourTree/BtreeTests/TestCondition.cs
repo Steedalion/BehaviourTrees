@@ -23,12 +23,14 @@ namespace BehaviourTree.BtreeTests
         {
             condition = new Condition("Condition", () => false);
             Assert.AreEqual(Status.Failure, condition.Process());
+            Assert.AreEqual(Status.Failure, condition.Process());
         }
 
         [Test]
         public void ReturnsTrueIfSet()
         {
             condition = new Condition("Always true", () => true);
+            Assert.AreEqual(Status.Success, condition.Process());
             Assert.AreEqual(Status.Success, condition.Process());
         }
 

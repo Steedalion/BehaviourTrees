@@ -2,8 +2,6 @@
 {
     public class BehaviourTreeRoot : Node
     {
-    
-
         public override Status Process()
         {
             if (currentChild >= children.Count)
@@ -17,18 +15,14 @@
                 return Status.Running;
             }
 
-
             return Status.Running;
         }
-
-    
 
         public string TreeString()
         {
             return PrintName(0);
         }
 
-    
 
         public BehaviourTreeRoot(string name) : base(name)
         {

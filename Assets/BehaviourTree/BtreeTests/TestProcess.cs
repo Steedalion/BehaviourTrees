@@ -17,7 +17,8 @@ namespace BehaviourTree.BtreeTests
         {
             tree.AddChild(failingOneShot);
             tree.Process();
-            Assert.AreEqual(Status.Failure,tree.Process());
+            tree.Process();
+            Assert.AreEqual(Status.Failure, tree.Process());
         }
 
         [Test]
@@ -42,6 +43,7 @@ namespace BehaviourTree.BtreeTests
             Assert.IsFalse(two.done);
             Assert.AreEqual(Status.Running, tree.Process());
             Assert.IsTrue(two.done);
+            Assert.AreEqual(Status.Success, tree.Process());
             Assert.AreEqual(Status.Success, tree.Process());
         }
 

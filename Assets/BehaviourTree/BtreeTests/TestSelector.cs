@@ -2,9 +2,28 @@
 
 namespace BehaviourTree.BtreeTests
 {
+    public class TestSomeTrees : TreeTest
+    {
+        [Test]
+        public void ConditionStopsSelector()
+        {
+
+            Node alwaysFails = new Condition("fail", () => false);
+            Node seq = new Sequence("seq");
+            seq.AddChild(alwaysFails);
+            seq.AddChild(oneshot);
+            tree.AddChild(seq);
+
+            tree.Process();
+            tree.Process();
+            tree.Process();
+            tree.Process();
+            Assert.IsFalse(oneshot.done);
+        }
+    }
     public class TestSelector : TreeTest
     {
-        private Node selector;
+        private Selector selector;
 
         [SetUp]
         public void CreateSelector()
@@ -47,6 +66,25 @@ namespace BehaviourTree.BtreeTests
 
             Assert.AreEqual(Status.Running, selector.Process());
             Assert.AreEqual(Status.Success, selector.Process());
+        }
+
+        [Test]
+        public void FailureOverrun()
+        {
+            selector.AddChild(failingOneShot);
+            selector.AddChild(oneshot);
+            selector.Process();
+            selector.Process();
+        }
+
+       
+
+        [Test]
+        public void PassOverrun()
+        {
+            selector.AddChild(oneshot);
+            Assert.AreEqual(Status.Success, selector.Process());
+            selector.Process();
         }
     }
 }
