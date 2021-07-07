@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using BehaviourTree.BtreeTests;
+﻿using BehaviourTree.BtreeTests;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class Robber : MonoBehaviour
 {
+    public float money = 0;
     public GameObject diamond, truck;
 
     private NavMeshAgent agent;
@@ -71,6 +70,7 @@ public class Robber : MonoBehaviour
         OpenADoor.AddChild(CheckBackDoor);
 
 
+        stealDiamond.AddChild(new Condition("Has money", () => money < 50));
         stealDiamond.AddChild(goToDiamond);
         stealDiamond.AddChild(reachedDestination);
         stealDiamond.AddChild(diamondDissapear);
@@ -78,7 +78,11 @@ public class Robber : MonoBehaviour
         Sequence getAway = new Sequence("get Away");
         getAway.AddChild(goToCar);
         getAway.AddChild(reachedDestination);
-        getAway.AddChild(goToDiamond);
+        getAway.AddChild(new ActionNode("Sell diamond", () =>
+        {
+            money += 100;
+            return Status.Success;
+        }));
 
 
         root.AddChild(OpenADoor);
